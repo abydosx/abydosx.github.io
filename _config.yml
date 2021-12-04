@@ -1,25 +1,25 @@
-title: Welcome to Flexton
-description: Flexton is a responsive and ultra-minimal theme for Jekyll.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "flexton.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+title: Abydos 的博客
+description: rua
+baseurl: ''
+url: 'https://abydosx.github.io/'
 
-# Author
-author-name:    Clayton Hanson
-author-image:   1.jpg
-author-job:     Web Developer
-author-email:   your-email@domain.com # Add your email for contant form.
-author-twitter: artemsheludko_ # Add your twitter account
-about-author:   I am a web developer focusing on front-end development. Always hungry to keep learning.
+author-name: abydos
+author-image: avatar.png
+author-job: 码字罢了
+# author-email: abydosxie@gmail.com # Add your email for contant form.*
+# author-twitter: artemsheludko_ # Add your twitter account*
+about-author: 浅尝辄止的象厂员工
 
 # Social settings
-social-twitter:   artemsheludko_
+social-twitter: bohemianSL
 social-facebook:
-social-github:    artemsheludko
-social-pinterest: artemsheludko
-social-instagram: artemsheludko_
+social-github: abydosx
+social-pinterest:
+social-instagram:
 social-youtube:
-social-vk:   
+social-vk:
 social-linkedin:
+social-weibo: 2599087317
 
 # Newsletter
 mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
@@ -37,7 +37,7 @@ plugins:
   - jekyll-paginate
 
 paginate: 7
-paginate_path: "/page/:num/"
+paginate_path: '/page/:num/'
 
 include:
   - _pages
