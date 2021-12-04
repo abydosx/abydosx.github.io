@@ -8,8 +8,7 @@ permalink: /contact/
     <div class="c-search u-full-width">
       <div class="c-search__box">
         <label for="js-search-input" class="u-screen-reader-text">Search for Blog</label>
-        <input type="text" id="js-search-input" class="c-search__text" autocomplete="off"
-          placeholder="Type to search...">
+        <input type="text" id="js-search-input" class="c-search__text" autocomplete="off" placeholder="Type to search...">
         <div data-icon='ei-search' data-size='s'></div>
       </div>
       <ul id="js-results-container" class="c-search-results-list"></ul>
@@ -17,11 +16,9 @@ permalink: /contact/
   </div>
 </header>
 <div class="c-form-box o-opacity">
-  <form class="c-form"
-    action="{% if site.author-email %}https://formspree.io/{{site.author-email}}{% else %}#{% endif %}" method="POST">
-    <a href="/">
-      <div class="c-form-bnt__close" data-icon='ei-close' data-size='s'></div>
-    </a>
+  <form class="c-form" action="{% if site.author-email %}https://formspree.io/{{site.author-email}}{% else %}#{% endif %}"
+    method="POST">
+    <a href="/"><div class="c-form-bnt__close" data-icon='ei-close' data-size='s'></div></a>
     <div class="c-form__title">You can contact me!</div>
     <div class="c-form__group">
       <label for="form-name">Your Name (Required)</label>
