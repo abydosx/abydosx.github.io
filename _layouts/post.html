@@ -18,7 +18,7 @@ layout: home
     </header>
     {% if page.image %}
     <div class="c-article__image o-opacity" style="background-image: url( {{" /images/" | prepend: site.baseurl | append
-      : page.image}} )"></div>
+      : page.image}} );{{page.image-mode}}"></div>
     {% else %}
     {% endif %}
     <div class="c-wrap-content">

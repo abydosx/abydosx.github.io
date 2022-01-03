@@ -1,0 +1,61 @@
+---
+layout: post
+title: React 从 0 到 1
+date: 2021-12-20 21:09:01 +0800
+image: posts/react.png
+tags: [react]
+categories: 前端
+---
+
+React、Vue、Angular 是当下最流行的三个 Web 前端框架，但据我观察人们在选择时往往并没有太多的顾虑，有时语言本身的特性甚至都不会成为影响因子。可以因为在中文社区中有更高的讨论度而选择 Vue，也可以因为 Antd 而选择 React。可能大多数时候都可以使用这些框架完成一些相同的工作，而且开始使用这些框架却并不困难，如果有 JavaScript、CSS、HTML 的基础知识就可以开始啦，机缘巧合我就先用 React 小试牛刀～
+
+React 拥有对新手非常友好的入门文档，并配有丰富的例子。想了想不如尝试比较主观概括 React 中的一些术语，算是可以有个初步的印象吧。
+
+##### 1. 概括
+
+React 有独特的 jsx 格式文件，可以在里面编辑包括 JavaScript 、HTML 和 TypeScript，会有更加清晰的视觉效果，更丰富的语法纠正。并且 React 支持 ES6 的语法，使用大括号在 HTML 中插入 JavaScript 语句，可以如下声明组件元素变量，但是与 DOM 中的元素并不一致，react 会将其转换为浏览器 DOM。
+
+`cosnt myElement = <div className="foo" />;`
+
+##### 2. 组件
+
+类组件：js 语句更加函数化的使用，将组件包装成类，可通过 extends 继承父组件
+
+函数组件：不会被实例化因此没有生命周期函数，但可以使用 hook 实现部分方法
+
+> [Dan Abramov 关于组件类型的一个例子](https://overreacted.io/zh-hans/how-are-function-components-different-from-classes/)，另一种分类方式：[React16 的组件类型](https://zhuanlan.zhihu.com/p/55000793)
+
+props：不可变的数据，可用于组件间传值
+
+state：组件内可变的数据，改变时会实时渲染 UI
+
+constructor： 构造函数，其中调用 super 函数将执行父类构造函数，解除对 this 的禁用
+
+render：实时映射最新的组件元素，类组件必须实现此方法
+
+ref：可通过 React.createRef 函数创建 ref 变量，挂载到组件上可在任意时刻获取组件实例；通过 React.forwardRef 函数可将 ref 传递到子组件中
+
+content: 可通过创建组件的 Provider 子类共享 content，直接使用 this.context 可读取最近的 Provider 的值，React.createContext 可创建默认 content，没有最近 Provider 时起效
+
+生命周期函数：
+![img](/images/posts/life.png)
+
+父子组件传值：子组件可通过 props 访问父组件值或方法；子组件挂载 ref，父组件即可获取子组件实例
+
+##### 3. hook
+
+首先是官方对 hook 的定义：
+
+> _Hook_ 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。
+
+总之就是为一个组件定义类就不再是必须的了。
+
+useState：维护状态，等同类组件中 setState
+
+useEffect：完成副作用操作，数据状态改变时执行回调函数，或是函数组件初始化时执行
+
+useContext：使用共享状态，等同类组件中加载 content
+
+useRef：和类组件中 ref 一致，使用 useRef 创建 ref 变量，挂载后可获取组件
+
+useReducer：类似 redux，用于复杂的 state 或相互影响的 state。将 state 状态接入 reducer 方法，并在其中集中处理，根据不同的 action.type 使用不同的 state，使 state 调用更加的清晰，维护也更加的方便

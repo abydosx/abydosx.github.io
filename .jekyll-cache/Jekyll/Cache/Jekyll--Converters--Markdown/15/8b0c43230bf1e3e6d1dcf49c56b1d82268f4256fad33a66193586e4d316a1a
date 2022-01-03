@@ -1,0 +1,52 @@
+I"`<p>​ 打开设置，可通过 UI 或 json 编辑：</p>
+
+<ul>
+  <li>
+    <p>Windows/Linux - <strong>File</strong> &gt; <strong>Preferences</strong> &gt; <strong>Settings</strong></p>
+  </li>
+  <li>
+    <p>macOS - <strong>Code</strong> &gt; <strong>Preferences</strong> &gt; <strong>Settings</strong></p>
+
+    <p>vscode 有两个配置模式，工作区 setting 将被优先使用</p>
+  </li>
+  <li>User Settings - 全局配置，适用于所有的打开的实例</li>
+  <li>Workspace Settings - 储存在工作区之下并仅适用于本工作区的配置</li>
+</ul>
+
+<h5 id="一通用配置">一、通用配置</h5>
+
+<ul>
+  <li>terminal: 终端配置</li>
+  <li>editor: 编译器相关设置</li>
+  <li>files: 打开文件配置</li>
+  <li>git: git 相关配置</li>
+  <li>search: 搜索设置</li>
+  <li>prettier：代码美化</li>
+  <li>可以通过安装插件进行更多语言、库的配置</li>
+</ul>
+
+<h5 id="二文件名匹配">二、文件名匹配</h5>
+
+<ul>
+  <li>
+    <p>/ 匹配除/之外的任意字符</p>
+  </li>
+  <li>** 匹配任意字符串</li>
+  <li>? 匹配任意单个字符</li>
+  <li>[name] 匹配 name 字符</li>
+  <li>[!name] 不匹配 name 字符</li>
+  <li>[s1,s2,s3] 匹配给定的字符串</li>
+  <li>[num1..num2] 匹配 num1 到 mun2 直接的整数</li>
+</ul>
+
+<h5 id="三常用插件">三、常用插件</h5>
+
+<ul>
+  <li>ESLint: javascript 代码格式化</li>
+  <li>Material Icon Theme: 文件图标</li>
+  <li>TODO Highlight: 高亮显示 TODO</li>
+  <li>Bracket Pair Colorizer: 括号彩色配对</li>
+  <li>Code Spell Checker: 单词拼写检查</li>
+  <li>持续更新中…</li>
+</ul>
+:ET
